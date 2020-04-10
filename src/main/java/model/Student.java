@@ -1,4 +1,4 @@
-package udemy;
+package model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,6 +58,11 @@ public class Student {
 
     public void setActivities(List<String> activities) {
         this.activities = activities;
+    }
+    
+    public void printListOfActivities(){
+
+        System.out.println("List of Activities are : " + this.activities);
     }
 
     @Override

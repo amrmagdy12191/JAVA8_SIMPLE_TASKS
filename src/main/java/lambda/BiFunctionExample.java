@@ -6,8 +6,8 @@ import java.util.Map;
 import java.util.function.BiFunction;
 import java.util.function.Predicate;
 
-import udemy.Student;
-import udemy.StudentDataBase;
+import model.Student;
+import model.StudentDataBase;
 
 public class BiFunctionExample {
 	

@@ -2,7 +2,7 @@ package lambda;
 
 import java.util.function.Predicate;
 
-import udemy.Student;
+import model.Student;
 
 public class PredicateStudentExample {
 	
