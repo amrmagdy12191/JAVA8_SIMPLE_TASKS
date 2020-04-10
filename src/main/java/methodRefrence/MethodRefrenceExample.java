@@ -4,6 +4,7 @@ import java.util.function.BiPredicate;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 import model.Student;
 import model.StudentDataBase;
@@ -17,19 +18,24 @@ public class MethodRefrenceExample {
 	
 	static Function<String,String> toUpperMethodRefrence = String::toUpperCase;
 	
+	
+	
 	static Consumer<Student>  c1= p -> System.out.println(p);
-	
-	
-	
+
 	static Consumer<Student>  c1MethodRefrence= System.out::println;
 	
 	static Consumer<Student>  c2MethodRefrence= Student::printListOfActivities;
+	
 	
 	
 	static Predicate<Student> predicateUsingMetRef = MethodRefrenceExample::greaterThan;
 
     static BiPredicate<Student,Integer> predicateUsingMethodReference = MethodRefrenceExample::greaterThan;
  
+    
+    
+    static Supplier<Student> supplier = Student::new;
+    static Function<String, Student> function = Student::new;
     
     
     static public  boolean greaterThan(Student student){
@@ -55,5 +61,9 @@ public class MethodRefrenceExample {
 		System.out.println("------");
         System.out.println(predicateUsingMetRef.test(StudentDataBase.studentSupplier.get()));
         System.out.println(predicateUsingMethodReference.test(StudentDataBase.studentSupplier.get(),3));
+        
+        System.out.println("------");
+        System.out.println(supplier.get());
+        System.out.println(function.apply("ABC"));
 	}
 }

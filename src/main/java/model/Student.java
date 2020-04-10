@@ -17,6 +17,14 @@ public class Student {
         this.gender = gender;
         this.activities = activities;
     }
+    
+    public Student() {
+		// TODO Auto-generated constructor stub
+	}
+    
+    public Student(String name) {
+		this.name = name;
+	}
 
     public String getGender() {
         return gender;
