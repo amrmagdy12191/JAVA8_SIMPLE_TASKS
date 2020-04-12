@@ -1,7 +1,7 @@
 package com.learnJava.streams;
 
-import com.learnJava.data.Student;
-import com.learnJava.data.StudentDataBase;
+import data.Student;
+import data.StudentDataBase;
 
 import java.util.Arrays;
 import java.util.Comparator;

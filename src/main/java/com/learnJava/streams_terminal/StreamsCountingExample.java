@@ -1,6 +1,6 @@
 package com.learnJava.streams_terminal;
 
-import com.learnJava.data.StudentDataBase;
+import data.StudentDataBase;
 
 import java.util.stream.Collectors;
 

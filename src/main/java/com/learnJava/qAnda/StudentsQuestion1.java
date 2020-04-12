@@ -1,6 +1,6 @@
 package com.learnJava.qAnda;
 
-import com.learnJava.data.Student;
+import data.Student;
 
 import java.util.*;
 import java.util.function.Function;

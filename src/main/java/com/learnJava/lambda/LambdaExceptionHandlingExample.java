@@ -1,7 +1,7 @@
 package com.learnJava.lambda;
 
-import com.learnJava.data.Student;
-import com.learnJava.data.StudentDataBase;
+import data.Student;
+import data.StudentDataBase;
 
 import java.util.ArrayList;
 import java.util.List;

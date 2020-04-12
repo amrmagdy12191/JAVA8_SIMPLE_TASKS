@@ -1,6 +1,6 @@
 package com.learnJava.methodreferences;
 
-import com.learnJava.data.Student;
+import data.Student;
 
 import java.util.function.Supplier;
 

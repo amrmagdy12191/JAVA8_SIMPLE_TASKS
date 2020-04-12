@@ -1,7 +1,7 @@
 package com.learnJava.optional;
 
-import com.learnJava.data.Student;
-import com.learnJava.data.StudentDataBase;
+import data.Student;
+import data.StudentDataBase;
 
 import java.util.Optional;
 
