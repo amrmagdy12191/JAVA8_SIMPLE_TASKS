@@ -6,8 +6,8 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-import model.Student;
-import model.StudentDataBase;
+import data.Student;
+import data.StudentDataBase;
 /**
  * Simplify Function Lambda expression
  * @author Amr Magdy

@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Supplier;
 
-import model.Student;
-import model.StudentDataBase;
+import data.Student;
+import data.StudentDataBase;
 
 public class SupplierExample {
 	

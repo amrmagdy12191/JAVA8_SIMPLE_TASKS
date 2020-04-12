@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.function.BiPredicate;
 import java.util.function.Consumer;
 
-import model.Student;
-import model.StudentDataBase;
+import data.Student;
+import data.StudentDataBase;
 
 public class BiPredicateExample {
 	static BiPredicate<Integer, Double> bip = (gradeLevel, gpa) -> gradeLevel>=3 && gpa>=3.9;
