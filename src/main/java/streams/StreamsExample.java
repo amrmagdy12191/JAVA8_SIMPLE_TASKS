@@ -10,10 +10,13 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Random;
 import java.util.Set;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StreamsExample {
 	
@@ -104,6 +107,24 @@ public class StreamsExample {
 		
 		System.out.println(findAny(studentsList).get());
 		System.out.println(findFirst(studentsList).get());
+		
+		Stream.iterate(1, x->x*2)
+			.limit(10)
+			.forEach(i -> System.out.println(i));
+		Stream.iterate("a",  x-> x.concat("b"))
+			.limit(5)
+			.forEach( i-> System.out.println(i));
+		
+		List<Integer> intList = Stream.iterate(1,  x->x*2)
+			.limit(10)
+			.collect(Collectors.toList());
+		System.out.println(intList);
+		
+		Stream.generate(Student::new).limit(5).forEach(s -> System.out.println(s));
+		
+		Supplier<Integer> randomInt =  new Random()::nextInt;
+		List<Integer> intList2 = Stream.generate(randomInt).limit(5).collect(Collectors.toList());
+		System.out.println(intList2);
 		
 	}
 	

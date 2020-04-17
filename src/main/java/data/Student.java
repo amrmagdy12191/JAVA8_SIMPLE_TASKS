@@ -53,6 +53,11 @@ public class Student {
     public Student(String s) {
         this.name = s;
     }
+    
+    public Student(String s, Integer gradeLevel) {
+        this.name = s;
+        this.gradeLevel = gradeLevel;
+    }
 
     public String getGender() {
         return gender;

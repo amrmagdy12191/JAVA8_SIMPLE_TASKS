@@ -1,6 +1,8 @@
 package methodRefrence;
 
+import java.util.function.BiFunction;
 import java.util.function.BiPredicate;
+import java.util.function.BinaryOperator;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -8,6 +10,7 @@ import java.util.function.Supplier;
 
 import data.Student;
 import data.StudentDataBase;
+import lambda.BinaryFunction;
 /**
  * Simplify Function Lambda expression
  * @author Amr Magdy
@@ -36,6 +39,7 @@ public class MethodRefrenceExample {
     
     static Supplier<Student> supplier = Student::new;
     static Function<String, Student> function = Student::new;
+    static BiFunction<String, Integer, Student> function2= Student::new;
     
     
     static public  boolean greaterThan(Student student){
@@ -65,5 +69,6 @@ public class MethodRefrenceExample {
         System.out.println("------");
         System.out.println(supplier.get());
         System.out.println(function.apply("ABC"));
+        System.out.println(function2.apply("amr", 4));
 	}
 }
