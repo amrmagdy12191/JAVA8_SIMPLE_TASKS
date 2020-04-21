@@ -9,10 +9,10 @@ public class MultiplierImpl implements Multiplier {
 		return integerList.stream().reduce(1, (a,b) -> a*b);
 	}
 	
-//	@Override
-//	public int size(List<Integer> integerList) {
-//		System.out.println("Inside Implementation");
-//		return integerList.size();
-//	}
+	@Override
+	public int size(List<Integer> integerList) {
+		System.out.println("Inside Implementation");
+		return integerList.size();
+	}
 
 }
